@@ -9,6 +9,5 @@ RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.53/bin/apache-tomcat-9.0.
 && tar xvzf apache-tomcat-9.0.53.tar.gz --strip-components 1 --directory /opt/tomcat \
 && /opt/tomcat/bin/catalina.sh version \
 && rm -rf apache-tomcat-9.0.53.tar.gz \
-&& apk -v cache clean
 EXPOSE 8080
 CMD ["/opt/tomcat/bin/catalina.sh", "run"]
