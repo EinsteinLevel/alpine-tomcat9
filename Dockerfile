@@ -1,6 +1,6 @@
 FROM alpine:latest
 RUN apk add --no-cache wget \
-&& apk add openjdk11-jre-headless \
+&& apk add openjdk11-jre-lib \
 && java -version \
 && mkdir /opt/tomcat
 WORKDIR /home
